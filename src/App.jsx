@@ -66,7 +66,6 @@ function AppContent() {
         {componentes.map((Componente, i) => (
           <Route key={i} path={`/exercicio${i + 1}`} element={<Componente />} />
         ))}
-        <Route path="/" element={<div />} />
       </Routes>
     </div>
   );
