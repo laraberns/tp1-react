@@ -43,13 +43,16 @@ const componentes = [
 
 function ListaExercicios() {
   return (
-    <ul>
-      {componentes.map((_, i) => (
-        <li key={i}>
-          <Link to={`/exercicio${i + 1}`}>Exercício {i + 1}</Link>
-        </li>
-      ))}
-    </ul>
+    <>
+      <h1>Lista de Exercícios</h1>
+      <ul>
+        {componentes.map((_, i) => (
+          <li key={i}>
+            <Link to={`/exercicio${i + 1}`}>Exercício {i + 1}</Link>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
@@ -58,8 +61,6 @@ function AppContent() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>Lista de Exercício</h1>
-
       {location.pathname === "/" && <ListaExercicios />}
 
       <Routes>

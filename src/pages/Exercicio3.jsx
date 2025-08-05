@@ -1,3 +1,3 @@
 export default function Exercicio3() {
-  return <h2>Exercício 3</h2>;
+  return <h1>Hello, React!</h1>;
 }
